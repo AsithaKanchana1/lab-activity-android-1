@@ -14,7 +14,8 @@ This repository contains the Android project for the **EEI4369 - Mobile Applicat
 * **Task 4: Sensor Integration:** An activity that uses the device's ambient temperature sensor to trigger an audio clip when a specific temperature threshold is exceeded. for **my Specipic Treshold is 26**.
 * **Task 5: SQLite Database:** The login credentials from the first screen are validate using local SQLite database, with a confirmation message displayed to the user.
 * **Unified Navigation:** All activities are connected in a logical flow: <br>
-`Login -> Home-> Sensor Activity`<br>
+`Login -> Home->`<br>
+`-------> Home->`<br>
 `-------> Home-> Map`<br>
 `-------> Home-> Multimedia`<br>
 
@@ -58,7 +59,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     * Allow Gradle to sync and build the project dependencies. This may take a few minutes.
 
 3.  **Add Google Maps API Key**
-
+<img src="./screenshots/localprpaties.png alt="Login Screen" width="300"/>
     The Google Maps API Key is intentionally not included in the source code for security reasons. To enable map functionality, you must add your own API key.
 
     * In the root directory of the project, find or create a file named 
