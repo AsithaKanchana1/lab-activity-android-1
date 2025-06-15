@@ -1,3 +1,10 @@
+import java.util.Properties
+
+val properties = Properties()
+val localPropertiesFile = project.rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    properties.load(localPropertiesFile.inputStream())
+}
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -14,6 +21,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        val mapsApiKey = properties.getProperty("MAPS_API_KEY") ?: ""
+        resValue("string", "my_api_key", mapsApiKey)
     }
 
     buildTypes {
@@ -45,4 +54,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.google.maps.android:android-maps-utils:3.10.0")
 }
