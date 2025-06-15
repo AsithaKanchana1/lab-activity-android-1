@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img2"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/homeLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Home"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/boxAroundHome"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custopm_edittext"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="79dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/toMapBtn"
+            android:text="Map"
+            android:textColor="@color/black"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/green_transparent"
+            app:cornerRadius = "30dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/toMultimedia"
+            android:text="Multi Media"
+            android:textColor="@color/black"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/yellow_transparent"
+            app:cornerRadius = "30dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/toSensor"
+            android:text="Senser Test"
+            android:textColor="@color/black"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/orange_transparent"
+            app:cornerRadius = "30dp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
