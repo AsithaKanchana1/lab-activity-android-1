@@ -9,9 +9,9 @@ This repository contains the Android project for the **EEI4369 - Mobile Applicat
 * **Task 4: Sensor Integration:** An activity that uses the device's ambient temperature sensor to trigger an audio clip when a specific temperature threshold is exceeded. for **my Specipic Treshold is 26**.
 * **Task 5: SQLite Database:** The login credentials from the first screen are validate using local SQLite database, with a confirmation message displayed to the user.
 * **Unified Navigation:** All activities are connected in a logical flow: 
-`Login -> Home-> Sensor Activity`.
-`-------> Home-> Map`.
-`-------> Home-> Multimedia`.
+`Login -> Home-> Sensor Activity`<br>
+`-------> Home-> Map`<br>
+`-------> Home-> Multimedia`<br>
 
 ## 🛠️ Getting Started
 
