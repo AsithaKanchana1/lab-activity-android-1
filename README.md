@@ -21,19 +21,11 @@ More Instructions are Avalable in **Installation and Setup Section**
 
 Here's a gallery of the key features of the application.
 
-| Login Screen (Task 1, 2 & 5) | Google Maps (Task 3) | Multimedia (Task 4)
-| :---: | :---: |
-| <img src="/screenshots/dontuse1.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse2.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse3.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse4.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse5.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse6.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse7.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse8.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse9.png alt="Login Screen" width="300"/>
-
-
+| Login Screen (Task 1, 2 & 5) | Google Maps (Task 3) | Sensor & Multimedia (Task 4) |
+|:----------------------------:|:--------------------:|:------------------------------:|
+| <img src="./screenshots/dontuse1.png" alt="Login Screen" width="250"/> | <img src="./screenshots/dontuse2.png" alt="Map Screen" width="250"/> | <img src="./screenshots/dontuse3.png" alt="Sensor Screen" width="250"/> |
+| <img src="./screenshots/dontuse4.png" alt="Database Toast" width="250"/> | <img src="./screenshots/dontuse5.png" alt="Map Location" width="250"/> | <img src="./screenshots/dontuse6.png" alt="Emulator Controls" width="250"/> |
+| <img src="./screenshots/dontuse7.png" alt="Image 7" width="250"/> | <img src="./screenshots/dontuse8.png" alt="Image 8" width="250"/> | <img src="./screenshots/dontuse9.png" alt="Image 9" width="250"/> |
 ###  Techonologies 
 - java
 - SQLite
