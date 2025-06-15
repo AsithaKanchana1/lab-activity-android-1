@@ -3,8 +3,10 @@
 This repository contains the Android project for the **EEI4369 - Mobile Application Development for Android** lab test for the 2024/2025 academic year. The application integrates all five lab tasks into a single, cohesive Android project built with Java.
 
 **IMPORTENT**
-GOOGLE MAP API KEY IS NOT INCLUDET NEED TO ADD THEM MANUALY
-More Instructions are Avalable in **Installation and Setup Section**
+```
+**GOOGLE MAP API KEY IS NOT INCLUDET NEED TO ADD THEM MANUALY**
+**re Instructions are Avalable in Installation and Setup Section**
+```
 ## ✨ Features
 
 * **Task 1 & 2: Login Interface & Multimedia:** A functional login screen that serves as the app's entry point, and after featuring multimedia elements in Multimedia Page
