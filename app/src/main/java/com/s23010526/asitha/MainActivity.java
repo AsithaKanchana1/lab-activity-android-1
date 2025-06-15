@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     Button logingButton;
+
+    //database Helper Object
+    DatabaseHelper myDb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,21 +31,39 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         logingButton = findViewById(R.id.logingButton);
 
+        //new database instence
+        myDb = new DatabaseHelper(this);
+
+        // following are sample data  i haven implement sinupo page yet so i culdnut get user data
+        //in futere this will change
+        myDb.insertUser("Asitha","2025");
+        myDb.insertUser("Kanchana","1234");
+
+        //---------------------------------------
+
+
         logingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("A") && password.getText().toString().equals("1234")) {
-                    Toast.makeText(MainActivity.this, "Login Successfull!",  Toast.LENGTH_SHORT).show();
-                    // If conditions are correct then Move in to Home Page
-                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                    startActivity(intent);
-                    finish();
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
 
-                    // if username or password is wrong then following will do (error msg)
+                if (user.isEmpty() || pass.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this,"Loging Faield !", Toast.LENGTH_SHORT).show();
-                    password.requestFocus(); // keeping focus when password is wrong
+                    // Check user credentials against the database
+                    boolean isAuthenticated = myDb.checkUser(user, pass);
 
+                    if (isAuthenticated) {
+                        // Display a Toast message to confirm the status
+                        Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(MainActivity.this, "Login Failed! Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        password.requestFocus();
+                    }
                 }
             }
         });
