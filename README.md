@@ -24,18 +24,15 @@ Here's a gallery of the key features of the application.
 | Login Screen (Task 1, 2 & 5) | Google Maps (Task 3) | Multimedia (Task 4)
 | :---: | :---: |
 | <img src="/screenshots/dontuse1.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse2.png alt="Login Screen" width="300"/
-| <img src="/screenshots/dontuse3.png alt="Login Screen" width="300"/
-| <img src="/screenshots/dontuse4.png alt="Login Screen" width="300"/
+| <img src="/screenshots/dontuse2.png alt="Login Screen" width="300"/>
+| <img src="/screenshots/dontuse3.png alt="Login Screen" width="300"/>
+| <img src="/screenshots/dontuse4.png alt="Login Screen" width="300"/>
 | <img src="/screenshots/dontuse5.png alt="Login Screen" width="300"/>
-| <img src="/screenshots/dontuse6.png alt="Login Screen" width="300"/
-| <img src="/screenshots/dontuse7.png alt="Login Screen" width="300"/
-| <img src="/screenshots/dontuse8.png alt="Login Screen" width="300"/
-| <img src="/screenshots/dontuse9.png alt="Login Screen" width="300"/
+| <img src="/screenshots/dontuse6.png alt="Login Screen" width="300"/>
+| <img src="/screenshots/dontuse7.png alt="Login Screen" width="300"/>
+| <img src="/screenshots/dontuse8.png alt="Login Screen" width="300"/>
+| <img src="/screenshots/dontuse9.png alt="Login Screen" width="300"/>
 
-
-| **Sensor Activity (Task 4)** | **Emulator Sensors** |
-| <img src="https://raw.githubusercontent.com/your-username/your-repo/main/screenshots/sensor-ui.png" alt="Sensor Screen" width="300"/> | <img src="https://raw.githubusercontent.com/your-username/your-repo/main/screenshots/emulator-controls.png" alt="Emulator Controls" width="300"/> |
 
 ###  Techonologies 
 - java
