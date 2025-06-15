@@ -13,70 +13,90 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="1dp"
         android:text="Home"
         android:textColor="@color/yellow"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/boxAroundHome"
-        android:layout_width="409dp"
-        android:layout_height="60dp"
-        android:background="@drawable/custopm_edittext"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/boxAroundHome"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/custopm_edittext"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="16dp" />-->
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="191dp"
         android:orientation="vertical"
         android:padding="24dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="79dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLable">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/toMapBtn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/toMapBtn"
-            android:text="Map"
-            android:textColor="@color/black"
-            app:strokeWidth="2dp"
-            app:strokeColor="@color/white"
-            android:textSize="18sp"
             android:layout_marginTop="150dp"
             android:backgroundTint="@color/green_transparent"
-            app:cornerRadius = "30dp"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/toMultimedia"
-            android:text="Multi Media"
+            android:text="Map"
             android:textColor="@color/black"
-            app:strokeWidth="2dp"
-            app:strokeColor="@color/white"
             android:textSize="18sp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/yellow_transparent"
-            app:cornerRadius = "30dp"
-            />
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/toMultimedia"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/toSensor"
-            android:text="Senser Test"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/yellow_transparent"
+            android:text="Multi Media"
             android:textColor="@color/black"
-            app:strokeWidth="2dp"
-            app:strokeColor="@color/white"
             android:textSize="18sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toSensor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/orange_transparent"
-            app:cornerRadius = "30dp"
-            />
+            android:text="Senser Test"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:id="@+id/sNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sID"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
