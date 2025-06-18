@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-// ++++++++++++++++++++++++++Map Page+++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++Map Page++++++++++++++++++++++++Asitha +++++++++++++++++
         //map Button Id
         mapButton = findViewById(R.id.toMapBtn);
 

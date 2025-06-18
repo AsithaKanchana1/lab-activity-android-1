@@ -100,7 +100,6 @@ Once the setup is complete, you can run the application on your emulator or phys
 #### 1st Values
 
     User Name 
-
     ```bash
     Asitha
     ```
@@ -141,6 +140,6 @@ all the other lab activity linked to Home Page
     1.  With the app running in the emulator, click the three dots (`...`) in the emulator's side panel to open the **Extended Controls**.
     2.  Navigate to the **Virtual Sensors** tab.
     3.  Find the **Ambient temperature** slider.
-    4.  The temperature threshold for this project is set based on the student's SID (e.g., for `S92075210`, the threshold is `10` °C).
+    4.  The temperature threshold for this project is set based on the student's SID (e.g., for `S23010526`, the threshold is `26` °C).
     5.  Slowly drag the slider to increase the temperature.
 * **Verification:** When the emulated temperature rises **above** the set threshold, you will hear an audio clip play automatically.
